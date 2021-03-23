@@ -96,7 +96,7 @@ int menu()
 	return op;
 }
 
-void InserirInicio(int num)
+void InserirInicio(int num)    //inserir no começo.
 {
 	ElementoDaLista_Simples *NovoElemento;
 	//alocar o elemento na memoria.
@@ -116,7 +116,7 @@ void InserirInicio(int num)
 }
 
 
-void InserirFim(int num) 
+void InserirFim(int num)  //inserir no fim da lista.
 {
 	ElementoDaLista_Simples* NovoElemento;
 	NovoElemento = (struct ElementoDaLista_Simples*)malloc(sizeof(struct ElementoDaLista_Simples));
@@ -140,7 +140,7 @@ void InserirFim(int num)
 		NovoElemento->prox = NULL;
 	}
 }
-void InserirMeio(int num, int posicao)
+void InserirMeio(int num, int posicao)    //inserir no meio da lista.
 {
 	ElementoDaLista_Simples* NovoElemento;
 	NovoElemento = (struct ElementoDaLista_Simples*)malloc(sizeof(struct ElementoDaLista_Simples));
@@ -167,7 +167,7 @@ void InserirMeio(int num, int posicao)
 		}
 	}
 }
-int Remover(int num)
+int Remover(int num)      //função para remover um item.
 {
 	ElementoDaLista_Simples* ElementoVarredura;
 	ElementoVarredura = (struct ElementoDaLista_Simples*)malloc(sizeof(struct ElementoDaLista_Simples));
@@ -195,40 +195,7 @@ int Remover(int num)
 	}
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-void Listar()
+void Listar()        //função para listar.
 {
 	ElementoDaLista_Simples* ElementoVarredura;
 	ElementoVarredura = (struct ElementoDaLista_Simples*)malloc(sizeof(struct ElementoDaLista_Simples));
